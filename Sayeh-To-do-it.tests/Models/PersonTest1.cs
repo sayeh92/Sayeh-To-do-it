@@ -8,9 +8,10 @@ namespace Sayeh_To_do_it.tests.Models
         public class UnitTests
         {
             [Theory]
+            [InlineData(null)]
             [InlineData("")]
             [InlineData(" ")]
-            [InlineData(null)]
+           
             public void FirstNameBadValueTest(string badFirstName)
             {
                 //Arrange
