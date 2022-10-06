@@ -3,8 +3,7 @@ using Sayeh_To_do_it.Models;
 
 namespace Sayeh_To_do_it.tests.Models
 {
-    public class UnitTest1
-    {
+   
         public class UnitTests
         {
             [Theory]
@@ -67,5 +66,5 @@ namespace Sayeh_To_do_it.tests.Models
 
             }
         }
-    }
+    
 }
