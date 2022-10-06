@@ -28,9 +28,9 @@ namespace Sayeh_To_do_it.Models
             get { return _firstName; } //getters
             set
             {
-                if (string.IsNullOrEmpty(value))
+                if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentNullException("Can not be null or empty");
+                    throw new ArgumentException("Can not be null or empty");
                 }
                 else
                 {
@@ -45,9 +45,9 @@ namespace Sayeh_To_do_it.Models
             get { return _lastName; } //getters
             set
             {
-                if (string.IsNullOrEmpty(value))
+                if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentNullException("Can not be null or empty");
+                    throw new ArgumentException("Can not be null or empty");
                 }
                 else
                 {

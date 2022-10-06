@@ -8,10 +8,10 @@ namespace Sayeh_To_do_it.tests.Models
         public class UnitTests
         {
             [Theory]
-            [InlineData(null)]
+           
             [InlineData("")]
             [InlineData(" ")]
-           
+            [InlineData(null)]
             public void FirstNameBadValueTest(string badFirstName)
             {
                 //Arrange
@@ -22,7 +22,7 @@ namespace Sayeh_To_do_it.tests.Models
                 ArgumentException exception = Assert.Throws<ArgumentException>(() => testPerson.FirstName = badFirstName);
 
                 //Assert
-                Assert.Contains("Firstname", exception.Message);
+                Assert.Contains("empty", exception.Message);
 
             }
             [Theory]
@@ -38,7 +38,7 @@ namespace Sayeh_To_do_it.tests.Models
                 var exception = Assert.Throws<ArgumentException>(() => testPerson.LastName = badLastName);
 
                 //Assert
-                Assert.Contains("Lastname", exception.Message);
+                Assert.Contains("empty", exception.Message);
             }
 
 
