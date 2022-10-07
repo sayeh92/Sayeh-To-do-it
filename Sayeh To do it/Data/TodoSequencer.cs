@@ -12,6 +12,7 @@ namespace Sayeh_To_do_it.Data
 
         public static int NextTodoId()
         {
+            _toDoId++;
             return _toDoId;
         }
 
